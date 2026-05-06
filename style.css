@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Portal</title>
+<title>CodeMaster Academy Dashboard</title>
 
 <style>
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,24 +19,24 @@ header {
     padding: 20px;
 }
 
-/* Main container */
+/* Container */
 .container {
     padding: 20px;
 }
 
-/* Section titles */
+/* Section Heading */
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-/* Courses grid */
+/* Courses Section */
 .courses {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Course card */
+/* Course Card */
 .course-card {
     background: white;
     padding: 15px;
@@ -43,32 +44,35 @@ h2 {
     width: 250px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    transition: 0.3s;
 }
 
+/* Hover Effect */
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+/* Course Image */
 .course-card img {
     width: 100%;
     height: 150px;
     border-radius: 10px;
 }
 
-/* Progress bar */
+/* Progress Bar */
 progress {
     width: 100%;
     height: 15px;
     margin-top: 10px;
 }
 
-/* Task section */
+/* Tasks Section */
 .tasks {
     background: white;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.tasks ul {
-    padding-left: 20px;
 }
 
 /* Footer */
@@ -97,23 +101,23 @@ footer {
 <div class="courses">
 
 <div class="course-card">
-<img src="webdev.jpg">
-<h3>Web Dev</h3>
-<p>HTML, CSS, JS</p>
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<h3>Web Development</h3>
+<p>HTML, CSS, JavaScript</p>
 <progress value="80" max="100"></progress>
 </div>
 
 <div class="course-card">
-<img src="python.jfif">
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4">
 <h3>Python</h3>
-<p>Basics to Pro</p>
+<p>Basics to Advanced</p>
 <progress value="55" max="100"></progress>
 </div>
 
 <div class="course-card">
-<img src="datastr.jfif">
-<h3>DSA</h3>
-<p>Important Topics</p>
+<img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+<h3>Data Structures</h3>
+<p>Important Concepts</p>
 <progress value="30" max="100"></progress>
 </div>
 
